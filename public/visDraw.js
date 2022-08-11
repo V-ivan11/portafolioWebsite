@@ -5,9 +5,9 @@ function drawIvans() {
     var DIR = "images/";
 
     nodes = [
-        { id: 1, shape: "circularImage", image: DIR + "logo.svg" },
-        { id: 2, shape: "circularImage", image: DIR + "astronaut.svg", fixed: true },
-        { id: 3, shape: "circularImage", image: DIR + "logo.svg" },
+        { id: 1, shape: "circularImage", image: DIR + "photo_ins.svg", size: 80, mass:2 },
+        { id: 2, shape: "image", image: DIR + "photo_git.svg", mass: 10, size: 130 },
+        { id: 3, shape: "circularImage", image: DIR + "photo_lin.svg", size: 80, mass:2 },
     ]
 
     edges = [
@@ -22,46 +22,18 @@ function drawIvans() {
         edges: edges,
     };
     var options = {
-        nodes: {
-          borderWidth: 5,
-          size: 80,
-          color: {
-            border: "#222222",
-            background: "#666666",
-          },
-          font: { color: "#eeeeee" },
-        },
+        height: '100%',
+        weight: '100%',
+        physics: true,
         edges: {
           color: "lightgray",
+          length: 220,
+          width: 2
         },
+        interaction:{
+            dragView: false,
+            zoomView: false
+        }
       };
     network = new vis.Network(container, data, options);
-}
-
-function drawGraph() {
-    var nodes = new vis.DataSet([
-        { id: 1, label: "Node 1" },
-        { id: 2, label: "Node 2" },
-        { id: 3, label: "Node 3" },
-        { id: 4, label: "Node 4" },
-        { id: 5, label: "Node 5" }
-    ]);
-
-    // create an array with edges
-    var edges = new vis.DataSet([
-        { from: 1, to: 3 },
-        { from: 1, to: 2 },
-        { from: 2, to: 4 },
-        { from: 2, to: 5 },
-        { from: 3, to: 3 }
-    ]);
-
-    // create a network
-    var container = document.getElementById("mynetwork");
-    var data = {
-        nodes: nodes,
-        edges: edges
-    };
-    var options = {};
-    var network = new vis.Network(container, data, options);
 }
