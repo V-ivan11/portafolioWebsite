@@ -7,8 +7,9 @@
     <link href="/public/output.css" rel="stylesheet">
     <title>Iván Verduzco</title>
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="visDraw.js"></script>
 </head>
-<body>
+<body onload="drawIvans()">
     <header>
         <div class="fixed flex flex-col left-0 h-full w-20 border-r-2">
             <img src="images/logo.svg" class="h-20" alt=""/>
@@ -33,11 +34,12 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum mollitia sint aut dignissimos quo quia sit officia quibusdam!
                     </div>
                 </div>
-                <div class="flex flex-col w-1/2 h-full p-32 justify-center">
-                    <div id="mynetwork" class=" z-50">
+                <div class="flex flex-col w-1/2 h-full justify-center">
+                    <div id="mynetwork" class="h-full w-full">
                         a
                     </div>
-                    <img class="self-center" alt="" src="images/astronaut.svg" />
+                    <!--<img class="self-center" alt="" src="images/astronaut.svg" />-->
+                    
                 </div>
             </div>
         </section>
@@ -47,36 +49,5 @@
     <footer>
         
     </footer>
-    <script type="text/javascript">
-        // create an array with nodes
-        var nodes = new vis.DataSet([
-          { id: 1, label: "Node 1" },
-          { id: 2, label: "Node 2" },
-          { id: 3, label: "Node 3" },
-          { id: 4, label: "Node 4" },
-          { id: 5, label: "Node 5" }
-        ]);
-      
-        // create an array with edges
-        var edges = new vis.DataSet([
-          { from: 1, to: 3 },
-          { from: 1, to: 2 },
-          { from: 2, to: 4 },
-          { from: 2, to: 5 },
-          { from: 3, to: 3 }
-        ]);
-      
-        console.log(nodes)
-        console.log(edges)
-
-        // create a network
-        var container = document.getElementById("mynetwork");
-        var data = {
-          nodes: nodes,
-          edges: edges
-        };
-        var options = {};
-        var network = new vis.Network(container, data, options);
-      </script>
 </body>
 </html>

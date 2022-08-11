@@ -667,6 +667,10 @@ body {
   align-self: center;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-r-2 {
   border-right-width: 2px;
 }
