@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <filter id="Trazado_3" x="369.971" y="408.567" width="92.276" height="451.227" filterUnits="userSpaceOnUse">
+      <feOffset dx="20" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Trazado_5" x="535.045" y="249.674" width="335.347" height="609.653" filterUnits="userSpaceOnUse">
+      <feOffset dx="20" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Elipse_1" x="362.189" y="249.674" width="107.839" height="107.839" filterUnits="userSpaceOnUse">
+      <feOffset dx="20" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Elipse_2" data-name="Elipse 2" cx="540" cy="540" r="540" fill="rgba(183,183,183,0)"/>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Trazado_3)">
+    <path id="Trazado_3-2" data-name="Trazado 3" d="M0,0H63.276l-.49,369.934L0,422.227H0Z" transform="translate(369.97 408.57)" fill="#edf2f4"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Trazado_5)">
+    <path id="Trazado_5-2" data-name="Trazado 5" d="M239.815,0V126.522l-8.779,454.13,75.311-65.073V151.42l-66.532-1.311L76.989,515.58H0Z" transform="translate(841.39 830.33) rotate(180)" fill="#edf2f4"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Elipse_1)">
+    <circle id="Elipse_1-2" data-name="Elipse 1" cx="39.419" cy="39.419" r="39.419" transform="translate(362.19 249.67)" fill="#f15025"/>
+  </g>
+</svg>
