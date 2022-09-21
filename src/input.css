@@ -7,3 +7,6 @@
         @apply bg-slate-900 text-secondary lg:pl-20;
     }
 }
+.tooltip-text{
+    @apply bg-secondary w-auto left-8 text-primary rounded hidden group-hover:block absolute py-1 px-2 z-50
+}
